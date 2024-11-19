@@ -15,8 +15,8 @@ Não esqueça de verificar se a data inicial é menor ou igual à data final.
 Dica: conte o número de dias até cada uma das datas e subtraia esses números.
 '''
 
-dia_inicial = float (('Informe o dia inicial (com dois dígitos): '))
-mes_inicial = float (('Informe o mês inicial (com dois dígitos): '))
-dia_final   = float (('Informe o dia final (com dois dígitos): '))
-mes_final   = float (('Informe o mês final (com dois dígitos): '))
+dia_inicial = int(input('Informe o dia inicial (com dois dígitos): '))
+mes_inicial = int(input('Informe o mês inicial (com dois dígitos): '))
+dia_final   = int(input('Informe o dia final (com dois dígitos): '))
+mes_final   = int(input('Informe o mês final (com dois dígitos): '))
 
