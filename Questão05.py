@@ -23,6 +23,17 @@ hr_saida        = float(input('Informe a hora da saída: '))
 min_saida       = float(input('Informe os minutos da saída: '))
 tot_min_saida   = (hr_saida * 60) + min_saida
 
-total_permanecia = (tot_min_saida - tot_min_chegada) / 60
-print (f'total da permanencia {total_permanecia}min')
+total_permanecia = tot_min_saida - tot_min_chegada
+print (f'Você parmaneceu em nosso estacionamento por{total_permanecia:.0f}min')
+
+if total_permanecia <= 60:
+    vr_cobrado = 8
+elif total_permanecia > 60 <= 120:
+    vr_cobrado = 8 * 2
+elif total_permanecia > 120 <= 180:
+    vr_cobrado = (8*2) + 5
+elif total_permanecia > 180 <= 240:
+    vr_cobrado = (8*2) + (5*2) 
+print (f'vr cobrado é de {vr_cobrado} ')
+
 
