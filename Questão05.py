@@ -15,12 +15,14 @@ Como exemplo, considere que o carro ficou 310 minutos no estacionamento; deve pa
 (pela quinta hora e fração da sexta hora): total de R$ 32,00
 '''
 
-hr_chegada      = float ((input 'Informe a hora da chegada: '))
-min_chegada     = float ((input 'Informe os minutos da chegada: '))
+hr_chegada      = float(input('Informe a hora da chegada: '))
+min_chegada     = float(input('Informe os minutos da chegada: '))
 tot_min_chegada = (hr_chegada * 60) + min_chegada
 
-hr_saida        = float ((input 'Informe a hora da saída: '))
-min_saida       = float ((input 'Informe os minutos da saída: '))
+hr_saida        = float(input('Informe a hora da saída: '))
+min_saida       = float(input('Informe os minutos da saída: '))
 tot_min_saida   = (hr_saida * 60) + min_saida
 
-total_permanecia = tot_min_chegada + tot_min_saida
+total_permanecia = (tot_min_saida - tot_min_chegada) / 60
+print (f'total da permanencia {total_permanecia}min')
+
