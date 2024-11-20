@@ -15,15 +15,15 @@ Não esqueça de verificar se a data inicial é menor ou igual à data final.
 Dica: conte o número de dias até cada uma das datas e subtraia esses números.
 '''
 
-dia_inicial = int(input('Informe o dia inicial (com dois dígitos): '))
-mes_inicial = int(input('Informe o mês inicial (com dois dígitos): '))
+dia_inicial = int(input('Informe o dia inicial: '))
+mes_inicial = int(input('Informe o mês inicial: '))
 
-dia_final   = int(input('Informe o dia final (com dois dígitos): '))
-mes_final   = int(input('Informe o mês final (com dois dígitos): '))
+dia_final   = int(input('Informe o dia final: '))
+mes_final   = int(input('Informe o mês final: '))
 
-if mes_final == mes_final:
+if mes_inicial == mes_final:
     diferenca_dias = dia_final - dia_inicial
 else:
     diferenca_dias = ((mes_final - mes_inicial) * 30) - (dia_final - dia_inicial)
     #Aqui considerando que todos os meses têm 30 dias.
-print (f'Entre as datas {dia_inicial'/'mes_inicial} e {dia_final'/'mes_final} passaram-se {diferenca_dias}.')
+print (f'Entre as datas informadas passaram-se {diferenca_dias} dia(s).')
