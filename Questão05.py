@@ -26,7 +26,7 @@ tot_min_saida   = (hr_saida * 60) + min_saida
 
 if tot_min_saida < tot_min_chegada:
     tot_min_saida += 24 * 60 #Aqui somente nos casos da saida no dia seguinte. Add + 24h
-    #Usei a mesma lógica da questão 3. Chegada < saida, add 24h.
+    #Usei a mesma lógica da questão 3. Chegada > saida, add 24h.
 
 total_permanecia = tot_min_saida - tot_min_chegada
 
@@ -50,11 +50,9 @@ elif total_permanecia <= 720:
         hr_extra += 1 # add 1h para cada fração, assim consigo somar os $3 por cada hr ou fração
         #consegui consertar adicionando o =, pois a cada hr ou fração tem que somar +3.
     vr_cobrado = vr_base + hr_extra * 3
-    print (f'vr cobrado é de R$ {vr_cobrado} ')
+    print (f'Valor a ser pago é de R$ {vr_cobrado} ')
 else:
     vr_cobrado = 30
     print (f'Você permaneceu em nosso estacionamento por um periodo igual ou superio a 12h.')
 
-print (f'vr cobrado é de R$ {vr_cobrado} ')
-
-
+print (f'Valor a ser pago é de R$ {vr_cobrado} ')
