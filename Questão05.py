@@ -36,6 +36,6 @@ elif total_permanecia <= 720:
     vr_cobrado = vr_base + hr_extra * 3
 else:
     vr_cobrado = 30
-    print (f'Você permaneceu em nosso estacionamento por um periodo igual ou superio a 12h.')
+    print (f'Você permaneceu em nosso estacionamento por um periodo igual ou superior a 12h.')
 
 print (f'Valor a ser pago é de R$ {vr_cobrado:.0f} ')
