@@ -23,13 +23,13 @@ Implemente o programa em Python para calcular a data de aposentadoria e exibi-la
 Dica: Utilize as bibliotecas datetime e dateutil.
 '''
 from datetime import datetime
-from dateutil import dateutil
 import sys
 
 
 genero = str(input('Informe o genero do contribuinte (Masculino/Feminino):'))
-nascimento = float(input('Informe a data de nascimento no formato (DD/MM/AAAA):'))
-data_ini_cont = float(input('Informe a data do inicio da sua contribuição (DD/MM/AAAA):'))
+nascimento = str(input('Informe a data de nascimento no formato (DD/MM/AAAA):'))
+data_ini_cont = str(input('Informe a data do inicio da sua contribuição (DD/MM/AAAA):'))
+#Quando rodei o cod para teste, informou que era um str e não float.
 
 nascimento = datetime.strptime(nascimento, '%d/%m/%Y')
 data_ini_cont = datetime.strptime(data_ini_cont, '%d/%m/%Y')
