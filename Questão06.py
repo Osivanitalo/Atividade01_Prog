@@ -24,9 +24,22 @@ Dica: Utilize as bibliotecas datetime e dateutil.
 '''
 from datetime import datetime
 from dateutil import dateutil
+import sys
 
 
 genero = str(input('Informe o genero do contribuinte (Masculino/Feminino):'))
 nascimento = float(input('Informe a data de nascimento no formato (DD/MM/AAAA):'))
 data_ini_cont = float(input('Informe a data do inicio da sua contribuição (DD/MM/AAAA):'))
 
+nascimento = datetime.strptime(nascimento, '%d/%m/%Y')
+data_ini_cont = datetime.strptime(data_ini_cont, '%d/%m/%Y')
+
+if genero == 'Masculino':
+    idade_minima = 65
+    tempo_cont = 35
+elif genero == 'Feminino':
+    idade_minima = 62
+    tempo_cont = 30
+else:
+    print('Genero inválido. Informe "Masculino" ou "Feminino"!')
+    sys.exit
