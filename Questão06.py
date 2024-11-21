@@ -29,3 +29,4 @@ from dateutil import dateutil
 genero = str(input('Informe o genero do contribuinte (Masculino/Feminino):'))
 nascimento = float(input('Informe a data de nascimento no formato (DD/MM/AAAA):'))
 data_ini_cont = float(input('Informe a data do inicio da sua contribuição (DD/MM/AAAA):'))
+
