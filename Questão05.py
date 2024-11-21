@@ -34,8 +34,14 @@ elif total_permanecia <= 180:
     vr_cobrado = (8*2) + 5
 elif total_permanecia <= 240:
     vr_cobrado = (8*2) + (5*2)
-elif total_permanecia >=240:
-    vr_cobrado = 
+elif total_permanecia <= 720:
+    vr_base = (8*2) + (5*2)
+    min_extra = total_permanecia - 240 #Aqui eu busquei encontrar os min além dos 240
+    hr_extra  = min_extra // 60 #Fiz a divisao inteira, para encontrar a qtd de hr extras
+    if min_extra % 60 > 0: #só verificar se tem min restantes (fração de hora)
+        # para lembrar, esse % é o resto da divisão inteira
+        hr_extra + 1 # add 1h para cada fração, assim consigo somar os $3 por cada hr ou fração
+    vr_cobrado = vr_base + hr_extra * 3  
 print (f'vr cobrado é de {vr_cobrado} ')
 
 
