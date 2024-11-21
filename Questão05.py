@@ -38,4 +38,4 @@ else:
     vr_cobrado = 30
     print (f'Você permaneceu em nosso estacionamento por um periodo igual ou superio a 12h.')
 
-print (f'Valor a ser pago é de R$ {vr_cobrado} ')
+print (f'Valor a ser pago é de R$ {vr_cobrado:.0f} ')
