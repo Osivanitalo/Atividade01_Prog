@@ -24,7 +24,8 @@ min_saida       = float(input('Informe os minutos da saída: '))
 tot_min_saida   = (hr_saida * 60) + min_saida
 
 total_permanecia = tot_min_saida - tot_min_chegada
-print (f'Você parmaneceu em nosso estacionamento por{total_permanecia:.0f}min')
+print (f'Você parmaneceu em nosso estacionamento por {total_permanecia:.0f}min')
+
 
 if total_permanecia <= 60:
     vr_cobrado = 8
@@ -40,8 +41,14 @@ elif total_permanecia <= 720:
     hr_extra  = min_extra // 60 #Fiz a divisao inteira, para encontrar a qtd de hr extras
     if min_extra % 60 > 0: #só verificar se tem min restantes (fração de hora)
         # para lembrar, esse % é o resto da divisão inteira
-        hr_extra + 1 # add 1h para cada fração, assim consigo somar os $3 por cada hr ou fração
-    vr_cobrado = vr_base + hr_extra * 3  
-print (f'vr cobrado é de {vr_cobrado} ')
+        hr_extra += 1 # add 1h para cada fração, assim consigo somar os $3 por cada hr ou fração
+        #consegui consertar adicionando o =, pois a cada hr ou fração tem que somar +3.
+    vr_cobrado = vr_base + hr_extra * 3
+    print (f'vr cobrado é de R$ {vr_cobrado} ')
+else:
+    vr_cobrado = 30
+    print (f'Você permaneceu em nosso estacionamento por um periodo igual ou superio a 12h.')
+
+print (f'vr cobrado é de R$ {vr_cobrado} ')
 
 
