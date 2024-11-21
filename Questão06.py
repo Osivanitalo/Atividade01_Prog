@@ -43,3 +43,12 @@ elif genero == 'Feminino':
 else:
     print('Genero inválido. Informe "Masculino" ou "Feminino"!')
     sys.exit
+
+#calcular a aposentadoria por idade e por tempo contribuição
+data_apost_por_idade = datetime (nascimento.year + idade_minima, nascimento.month, nascimento.day)
+data_apost_por_tempo = datetime (data_ini_cont.year + tempo_cont, tempo_cont.month, tempo_cont.day)
+#saber a data exata que vai atingir a idade minima da aposent. O .year é calcular o ano
+
+#Segunda condição é saber se tem pelo menos 15 anos de contribuição, independente do sexo.
+data_min_contrib = datetime (data_ini_cont.year + 15, data_ini_cont.month, data_ini_cont.day)
+
