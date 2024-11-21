@@ -23,7 +23,13 @@ hr_saida        = float(input('Informe a hora da saída: '))
 min_saida       = float(input('Informe os minutos da saída: '))
 tot_min_saida   = (hr_saida * 60) + min_saida
 
+
+if tot_min_saida < tot_min_chegada:
+    tot_min_saida += 24 * 60 #Aqui somente nos casos da saida no dia seguinte. Add + 24h
+    #Usei a mesma lógica da questão 3. Chegada < saida, add 24h.
+
 total_permanecia = tot_min_saida - tot_min_chegada
+
 print (f'Você parmaneceu em nosso estacionamento por {total_permanecia:.0f}min')
 
 
