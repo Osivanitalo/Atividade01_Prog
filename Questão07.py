@@ -51,6 +51,8 @@ Desenvolva o código em Python para atender às especificações acima.
 Dica: Utilize a biblioteca math.
 '''
 
+import math
+
 #Identificação dos lados:
 lado_a = float(input('Informe o cumprimento do lado A:'))
 lado_b = float(input('Informe o cumprimento do lado B:'))
