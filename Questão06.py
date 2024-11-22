@@ -46,7 +46,7 @@ else:
 
 #calcular a aposentadoria por idade e por tempo contribuição
 data_apost_por_idade = datetime (nascimento.year + idade_minima, nascimento.month, nascimento.day)
-data_apost_por_tempo = datetime (data_ini_cont.year + tempo_cont, tempo_cont.month, tempo_cont.day)
+data_apost_por_tempo = datetime (data_ini_cont.year + tempo_cont, data_ini_cont.month, data_ini_cont.day)
 #saber a data exata que vai atingir a idade minima da aposent. O .year é calcular o ano
 
 #Segunda condição é saber se tem pelo menos 15 anos de contribuição, independente do sexo.
