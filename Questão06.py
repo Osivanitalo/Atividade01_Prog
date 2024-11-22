@@ -52,3 +52,4 @@ data_apost_por_tempo = datetime (data_ini_cont.year + tempo_cont, tempo_cont.mon
 #Segunda condição é saber se tem pelo menos 15 anos de contribuição, independente do sexo.
 data_min_contrib = datetime (data_ini_cont.year + 15, data_ini_cont.month, data_ini_cont.day)
 
+print(f'O contribuinte poderá e aposentar em')
