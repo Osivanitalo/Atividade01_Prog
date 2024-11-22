@@ -56,11 +56,12 @@ lado_a = float(input('Informe o cumprimento do lado A:'))
 lado_b = float(input('Informe o cumprimento do lado B:'))
 lado_c = float(input('Informe o cumprimento do lado C:'))
 
-if lado_a + lado_b > lado_c:
+if lado_a + lado_b <= lado_c:
     print('Os lados informados não podem formar um triângulo!')
-elif lado_a + lado_c > lado_b:
+elif lado_a + lado_c <= lado_b:
     print('Os lados informados não podem formar um triângulo!')
-elif lado_b + lado_c > lado_a:
+elif lado_b + lado_c <= lado_a:
     print('Os lados informados não podem formar um triângulo!')
 else:
     print('Os lados informados podem formar um triângulo!')
+# A soma de dois lados precisam ser maior que o terceiro lado.
