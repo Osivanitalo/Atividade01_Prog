@@ -67,3 +67,16 @@ elif lado_b + lado_c <= lado_a:
 else:
     print('Os lados informados podem formar um triângulo!')
 # A soma de dois lados precisam ser maior que o terceiro lado.
+
+'''
+calcular conforme a lei dos cossenos:
+Ângulo a = ((b² + c² - a²) / (2 * b * c))
+Ângulo b = ((a² + c² - b²) / (2 * a * c))
+Ângulo c = ((a² + b² - c²) / (2 * a * b))
+'''
+
+angulo_a = math.degrees(math.acos((lado_b**2 + lado_c**2 - lado_a**2) / (2*lado_b*lado_c)))
+angulo_b = math.degrees(math.acos((lado_a**2 + lado_c**2 - lado_b**2) / (2*lado_a*lado_c)))
+angulo_c = math.degrees(math.acos((lado_a**2 + lado_b**2 - lado_c**2) / (2*lado_a*lado_b)))
+
+print(f'angulo a {angulo_a}, angulo b {angulo_b} e angulo c {angulo_c}.')
