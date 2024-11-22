@@ -78,5 +78,7 @@ calcular conforme a lei dos cossenos:
 angulo_a = math.degrees(math.acos((lado_b**2 + lado_c**2 - lado_a**2) / (2*lado_b*lado_c)))
 angulo_b = math.degrees(math.acos((lado_a**2 + lado_c**2 - lado_b**2) / (2*lado_a*lado_c)))
 angulo_c = math.degrees(math.acos((lado_a**2 + lado_b**2 - lado_c**2) / (2*lado_a*lado_b)))
+# O math.degrees é para informar que quero o calculo em Graus.
+# O math.acos é para informar que quero o calculo do arco do cosseno.
 
-print(f'angulo a {angulo_a}, angulo b {angulo_b} e angulo c {angulo_c}.')
+print(f'Os ângulos do triângulo são: A {angulo_a:.2f}°, B {angulo_b:.2f}° e C {angulo_c:.2f}°.')
