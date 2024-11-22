@@ -11,13 +11,13 @@ Lc <0
 se passou por isso, é que vou saber se forma um triangulo. 
 
 
-Após indentificar que é um triangulo, será possivel identificar os três angulos. É para calcular os três.
+Após indentificar que é um triangulo, será possivel identificar os três angulos.
+É para calcular os três.
 
-Classificar o triangulo, quanto aos lados: Equilátero (3 lados igual), isósceles (3 lados iguais), escaleno (nenhum lado igual)
+Classificar o triangulo, quanto aos lados: Equilátero (3 lados igual), 
+isósceles (2 lados iguais), escaleno (nenhum lado igual)
 
 Classificar o triangulo, quanto aos ângulo: (agudo, obtuso ou retângulo)
-
-
 '''
 
 '''
@@ -50,4 +50,9 @@ Desenvolva o código em Python para atender às especificações acima.
 
 Dica: Utilize a biblioteca math.
 '''
+
+#Identificação dos lados:
+lado_a = float(input('Informe o cumprimento do lado A:'))
+lado_b = float(input('Informe o cumprimento do lado B:'))
+lado_c = float(input('Informe o cumprimento do lado C:'))
 
