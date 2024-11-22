@@ -26,7 +26,7 @@ from datetime import datetime
 import sys
 
 
-genero = str(input('Informe o genero do contribuinte (Masculino/Feminino):'))
+genero = str(input('Informe o genero do(a) contribuinte (Masculino/Feminino):'))
 nascimento = str(input('Informe a data de nascimento no formato (DD/MM/AAAA):'))
 data_ini_cont = str(input('Informe a data do inicio da sua contribuição (DD/MM/AAAA):'))
 #Quando rodei o cod para teste, informou que era um str e não float.
@@ -65,7 +65,7 @@ if data_apost_por_idade > data_apost_por_tempo:
 else:  
     data_aposentadoria = data_apost_por_tempo
 
-print(f'O contribuinte poderá e aposentar em {data_aposentadoria.strftime('%d/%m/%Y')}')
+print(f'O(A) contribuinte poderá se aposentar em {data_aposentadoria.strftime('%d/%m/%Y')}')
 '''
 Aqui foi usado o strftime('%d/%m/%Y'), pois eu quero que a data seja apresentada no formato
 brasileiro (DD/MM/AAAA).
