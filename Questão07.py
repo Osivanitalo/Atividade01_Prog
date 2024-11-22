@@ -82,3 +82,10 @@ angulo_c = math.degrees(math.acos((lado_a**2 + lado_b**2 - lado_c**2) / (2*lado_
 # O math.acos é para informar que quero o calculo do arco do cosseno.
 
 print(f'Os ângulos do triângulo são: A {angulo_a:.2f}°, B {angulo_b:.2f}° e C {angulo_c:.2f}°.')
+
+'''
+Classificação dos triângulos:
+três lados são iguais (equilátero);
+se dois lados são iguais (isósceles);
+se todos os lados são diferentes (escaleno).
+'''
