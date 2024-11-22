@@ -52,4 +52,21 @@ data_apost_por_tempo = datetime (data_ini_cont.year + tempo_cont, data_ini_cont.
 #Segunda condição é saber se tem pelo menos 15 anos de contribuição, independente do sexo.
 data_min_contrib = datetime (data_ini_cont.year + 15, data_ini_cont.month, data_ini_cont.day)
 
-print(f'O contribuinte poderá e aposentar em')
+'''
+Verificar se a o contrinuinte atingiu a idade minima com a condição de no mínimo 
+15 anos de contribuição.
+'''
+if data_apost_por_idade < data_apost_por_tempo:
+    data_apost_por_idade = data_min_contrib
+
+#Atribuir qual a data mais longe (idade ou contribuição) para ser informada.
+if data_apost_por_idade > data_apost_por_tempo:
+    data_aposentadoria = data_apost_por_idade
+else:  
+    data_aposentadoria = data_apost_por_tempo
+
+print(f'O contribuinte poderá e aposentar em {data_aposentadoria.strftime('%d/%m/%Y')}')
+'''
+Aqui foi usado o strftime('%d/%m/%Y'), pois eu quero que a data seja apresentada no formato
+brasileiro (DD/MM/AAAA).
+'''
