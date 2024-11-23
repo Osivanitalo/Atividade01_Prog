@@ -89,3 +89,15 @@ três lados são iguais (equilátero);
 se dois lados são iguais (isósceles);
 se todos os lados são diferentes (escaleno).
 '''
+if lado_a == lado_b:
+    if lado_b == lado_c:
+        classificacao = 'Equilátero.'
+elif lado_a == lado_b:
+    classificacao = 'Isósceles.'
+elif lado_b == lado_c:
+    classificacao = 'Isósceles.'
+elif lado_a == lado_c:
+    classificacao = 'Isósceles.'
+else:
+    classificacao = 'Escaleno.'
+print(f'O triângulo é classificado como {classificacao}.')
