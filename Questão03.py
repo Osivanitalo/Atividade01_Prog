@@ -1,13 +1,6 @@
 # QUESTAO 3
 
-'''
-Uma família fez uma viagem de carro e quer detalhes sobre o desempenho do veículo.
-Faça um programa que pergunta: o momento inicial da partida (hora e minuto), o momento de chegada
-(hora e minuto), o número de segundos parados para descanso, o número de litros de combustível gasto
-(em l), o preço do litro de combustível (em R$) e a distância percorrida (em Km);
-Após receber os dados, o programa informa dados típicos de um computador de bordo:
-'''
-
+# Entrada de dados do usuário.
 partida_hr    = float (input('Informe o momento inicial da viagem (hora):'))
 partida_min   = float (input('Informe o momento inicial da viagem (minuto):'))
 partida_seg   = ((partida_hr * 60) * 60) + (partida_min * 60)

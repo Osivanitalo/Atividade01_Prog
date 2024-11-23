@@ -1,6 +1,6 @@
 #QUESTAO 05
 
-
+# Entrada de dados do usuário.
 hr_chegada      = float(input('Informe a hora da chegada: '))
 min_chegada     = float(input('Informe os minutos da chegada: '))
 tot_min_chegada = (hr_chegada * 60) + min_chegada
